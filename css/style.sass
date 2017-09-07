@@ -1,0 +1,173 @@
+body
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0 
+    bottom: 0
+    display: -webkit-flex
+    -webkit-flex-direction: column
+    font-size: .14rem
+header 
+    width: 100%
+    height: .55rem  
+    background: #ff8201
+    ul 
+        display: -webkit-flex
+        li
+            flex: 1
+            line-height: .55rem
+            color: #fff
+            &:nth-child(2)
+                font-size: .16rem
+            &:nth-child(3)
+                text-align: right
+                padding-right: .1rem
+footer 
+    width: 100%
+    height: .6rem
+    border-top: 1px solid #ccc
+    ul 
+        display: flex 
+        li 
+            flex: 1
+            text-align: center
+            .fa 
+                margin-top: .05rem
+            p 
+                margin-top: .05rem
+            &:nth-child(4)
+                color: #ff7000
+section 
+    width: 100%
+    height: 100%
+    overflow: scroll
+    background: #f2f2f2
+    position: relative
+.shop-title
+    height: .4rem
+    display: flex 
+    background: #fee7b3
+    div
+        &:nth-child(1)
+            flex: 2
+            text-align: center
+            line-height: .4rem
+            color: #f8401c
+            .fa 
+                font-size: .18rem
+        &:nth-child(2)
+            flex: 7
+            font-size: .12rem
+            margin-top: .05rem
+            color: #d17046
+        &:nth-child(3)
+            flex: 1
+            text-align: center
+            line-height: .4rem
+            font-size: .20rem
+            color: #a8906c
+            cursor: pointer
+#menu 
+    margin-top: .1rem
+.shop-list  
+    height: .85rem
+    display: flex
+    background: #fff 
+    div 
+        flex: 1
+        &:nth-child(1)
+            flex: 2
+            height: 100%
+            text-align: center
+            position: relative
+            p 
+                width: .2rem
+                height: .2rem
+                border-radius: 100%
+                border: 2px solid #ccc
+                position: absolute
+                top: 0 
+                bottom: 0 
+                left: 0 
+                right: 0 
+                margin: auto
+        &:nth-child(2)
+            flex: 8
+            dl
+                display: flex
+                dt 
+                    flex: 3
+                    width: 100%
+                    height: .8rem
+                    img 
+                        width: 100%
+                        height: 100%
+                dd 
+                    flex: 7
+                    height: .85rem
+                    position: relative
+                    border-bottom: 1px solid #efefef
+                    h4 
+                        font-size: .12rem
+                        margin-top: .1rem
+                    .nums
+                        position: absolute
+                        right: .1rem 
+                        bottom: .15rem
+                        font-size: .12rem
+                        color: #989898
+                    p 
+                        color: #f58e3f
+                        margin-top: .1rem
+                        a 
+                            text-decoration: line-through
+                            color: #bababa
+                        
+                        
+.account
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    height: .5rem 
+    border-top: 1px solid #ccc
+    background: #fff
+    display: flex
+    div 
+        &:nth-child(1)
+            flex: 2
+            position: relative
+            p 
+                width: .2rem
+                height: .2rem
+                border-radius: 100%
+                border: 2px solid #ccc
+                position: absolute
+                top: 0 
+                bottom: 0 
+                left: 0 
+                right: 0 
+                margin: auto
+        &:nth-child(2)
+            flex: 6
+            display: flex
+            p 
+                flex: 1
+                line-height: .5rem
+                &:nth-child(1)
+                    color: #8b8b8b
+                &:nth-child(2)
+                    text-align: right
+                    padding-right: .1rem
+                    color: #000
+                    span 
+                        color: #f05a28
+                
+        &:nth-child(3)
+            flex: 2
+            text-align: center
+            color: #fff 
+            background: #ff7001
+            line-height: .5rem
+            cursor: pointer
+

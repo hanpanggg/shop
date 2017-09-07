@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li></li>
+            <li>购物车(102)</li>
+            <li>编辑</li>
+        </ul>
+    </header>
+    <section>
+        <div class="shop-title">
+            <div>
+                <i class="fa fa-bell-o"></i>
+            </div>
+            <div>
+                <p>我的天猫超市卡可用余额：79.8元,在天迈APP可使用超市卡结算哦！</p>
+            </div>
+            <div>
+                ×
+            </div>
+        </div>
+        <div id="menu">
+            <div class="shop-list" v-for="i in jsons">
+
+                <div class="left">
+                    <p></p>
+                </div>
+
+                <div class="right">
+                    <dl>
+                        <dt>
+                            <img :src="i.img" alt="">
+                        </dt>
+                        <dd>
+                            <h4>{{i.title}}</h4>
+                            <p>
+
+                                <span>{{i.price}} <a href="javascript:;">{{i.before}}</a></span>
+                            </p>
+                            <span class="nums">{{i.nums}}</span>
+                        </dd>
+                    </dl>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="account">
+            <div>
+                <p></p>
+            </div>
+            <div>
+                <p>全选</p>
+                <p>合计:<span>￥0</span></p>
+            </div>
+            <div>结算(0)</div>
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li>
+                <i class="fa fa-home"></i>
+                <p>首页</p>
+            </li>
+            <li>
+                <i class="fa fa-phone"></i>
+                <p>微淘</p>
+            </li>
+            <li>
+                <i class="fa fa-comment-o"></i>
+                <p>消息</p>
+            </li>
+            <li>
+                <i class="fa fa-shopping-cart"></i>
+                <p>购物车</p>
+            </li>
+            <li>
+                <i class="fa fa-user"></i>
+                <p>我的</p>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/vue.min.js"></script>
+    <script>
+        var vm = new Vue({
+            el: "#menu",
+            data: {
+                jsons: []
+            },
+            created: function () {
+                $.ajax({
+                    url: 'http://localhost:8008/goodslist',
+                    type: 'POST',
+                    data: "page=1&name=湘蜀阁"
+                }).then(function (result) {
+                    vm.jsons = result;
+                    console.log(result)
+                }, function (error) {
+                    console.log(error)
+                })
+            }
+
+        })
+    </script>
+</body>
+
+</html>

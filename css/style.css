@@ -1,0 +1,176 @@
+body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  font-size: 0.14rem; }
+
+header {
+  width: 100%;
+  height: 0.55rem;
+  background: #ff8201; }
+  header ul {
+    display: -webkit-flex; }
+    header ul li {
+      flex: 1;
+      line-height: 0.55rem;
+      color: #fff; }
+      header ul li:nth-child(2) {
+        font-size: 0.16rem; }
+      header ul li:nth-child(3) {
+        text-align: right;
+        padding-right: 0.1rem; }
+
+footer {
+  width: 100%;
+  height: 0.6rem;
+  border-top: 1px solid #ccc; }
+  footer ul {
+    display: flex; }
+    footer ul li {
+      flex: 1;
+      text-align: center; }
+      footer ul li .fa {
+        margin-top: 0.05rem; }
+      footer ul li p {
+        margin-top: 0.05rem; }
+      footer ul li:nth-child(4) {
+        color: #ff7000; }
+
+section {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background: #f2f2f2;
+  position: relative; }
+
+.shop-title {
+  height: 0.4rem;
+  display: flex;
+  background: #fee7b3; }
+  .shop-title div:nth-child(1) {
+    flex: 2;
+    text-align: center;
+    line-height: 0.4rem;
+    color: #f8401c; }
+    .shop-title div:nth-child(1) .fa {
+      font-size: 0.18rem; }
+  .shop-title div:nth-child(2) {
+    flex: 7;
+    font-size: 0.12rem;
+    margin-top: 0.05rem;
+    color: #d17046; }
+  .shop-title div:nth-child(3) {
+    flex: 1;
+    text-align: center;
+    line-height: 0.4rem;
+    font-size: 0.2rem;
+    color: #a8906c;
+    cursor: pointer; }
+
+#menu {
+  margin-top: 0.1rem; }
+
+.shop-list {
+  height: 0.85rem;
+  display: flex;
+  background: #fff; }
+  .shop-list div {
+    flex: 1; }
+    .shop-list div:nth-child(1) {
+      flex: 2;
+      height: 100%;
+      text-align: center;
+      position: relative; }
+      .shop-list div:nth-child(1) p {
+        width: 0.2rem;
+        height: 0.2rem;
+        border-radius: 100%;
+        border: 2px solid #ccc;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto; }
+    .shop-list div:nth-child(2) {
+      flex: 8; }
+      .shop-list div:nth-child(2) dl {
+        display: flex; }
+        .shop-list div:nth-child(2) dl dt {
+          flex: 3;
+          width: 100%;
+          height: 0.8rem; }
+          .shop-list div:nth-child(2) dl dt img {
+            width: 100%;
+            height: 100%; }
+        .shop-list div:nth-child(2) dl dd {
+          flex: 7;
+          height: 0.85rem;
+          position: relative;
+          border-bottom: 1px solid #efefef; }
+          .shop-list div:nth-child(2) dl dd h4 {
+            font-size: 0.12rem;
+            margin-top: 0.1rem; }
+          .shop-list div:nth-child(2) dl dd .nums {
+            position: absolute;
+            right: 0.1rem;
+            bottom: 0.15rem;
+            font-size: 0.12rem;
+            color: #989898; }
+          .shop-list div:nth-child(2) dl dd p {
+            color: #f58e3f;
+            margin-top: 0.1rem; }
+            .shop-list div:nth-child(2) dl dd p a {
+              text-decoration: line-through;
+              color: #bababa; }
+
+.account {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.5rem;
+  border-top: 1px solid #ccc;
+  background: #fff;
+  display: flex; }
+  .account div:nth-child(1) {
+    flex: 2;
+    position: relative; }
+    .account div:nth-child(1) p {
+      width: 0.2rem;
+      height: 0.2rem;
+      border-radius: 100%;
+      border: 2px solid #ccc;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto; }
+  .account div:nth-child(2) {
+    flex: 6;
+    display: flex; }
+    .account div:nth-child(2) p {
+      flex: 1;
+      line-height: 0.5rem; }
+      .account div:nth-child(2) p:nth-child(1) {
+        color: #8b8b8b; }
+      .account div:nth-child(2) p:nth-child(2) {
+        text-align: right;
+        padding-right: 0.1rem;
+        color: #000; }
+        .account div:nth-child(2) p:nth-child(2) span {
+          color: #f05a28; }
+  .account div:nth-child(3) {
+    flex: 2;
+    text-align: center;
+    color: #fff;
+    background: #ff7001;
+    line-height: 0.5rem;
+    cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */
